@@ -1,0 +1,293 @@
+*{
+    font-family: 'Trebuchet MS';
+}
+body, ul, li{
+    margin: 0;
+    padding: 0;
+}
+p,li,h1,h2,h3,h4{
+    color: #4e4e4e;
+    
+}
+body{
+    background: #f7f7f7;
+}
+.wrapper{
+    width: 96%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+header{
+    background: #e5e5e5;
+    padding: 20px 0;
+}
+header h1{
+    margin:0;
+    text-indent: -10000px;
+    background: url(img/logo.png) no-repeat;
+    width: 130px;
+    float: left;
+}
+header nav{
+    float: right;
+}
+header::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+header nav h2{
+    line-height: 0;
+    margin: 0;
+    text-indent: -10000px;
+}
+header nav li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px;   
+}
+header nav li a{
+    text-decoration:none;
+    color: #4e4e4e;
+    text-transform: uppercase;
+    transition: 0.3s;
+    font-weight: 900;
+}
+header nav li a:hover{
+    color: #1abb9c;
+}
+#main-banner img{
+    width: 100%; 
+}
+#main-banner{
+    overflow: hidden;
+    max-height: 600px;
+}
+#selling-points{
+    margin: 64px auto;
+    display: inline-block;
+}
+#selling-points li{
+    float: left;
+    overflow: hidden;
+    width: 23%;
+    padding: 1%;
+    text-align: center;
+    list-style: none;
+    line-height: 1.6em;
+}
+#selling-points::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+#latest-works{
+    padding-top: 30px;
+    margin-top:30px;
+    border-top: 2px solid #e4e4e4;
+    display: inline-block;
+}
+#latest-works h2{
+    text-transform: uppercase;
+    font-size:20px;
+    margin-bottom:40px ;
+}
+#latest-works li{
+    width: 32%;
+    float: left;
+    list-style-type: none;
+
+}
+#latest-works img{
+    width: 100%;
+}
+#latest-works li:nth-child(2){
+    margin: 0 2%;
+}
+#latest-works h3{
+    font-size: 18px;
+    font-weight: bold;
+    color: #4e4e4e;
+    
+}
+#latest-works p{
+    
+    line-height: 1.6em;
+    
+    
+}
+p.tags{
+    color: #b8b8b8;
+    font-size: 13px;
+    margin-top: 5px;
+}
+#quote{
+    margin-top: 60px;
+    width: 60%;
+    padding: 40px 20%;
+    background: url(img/quote.png) no-repeat center 20px;
+    background-color: #efefef;
+    color: #a1a1a1;
+    font-size: 20px;
+    line-height: 1.6em;
+    text-align: center;
+}
+footer{
+    background: #202020;
+    padding: 30px 0;
+    border-top: 10px solid #151515;
+}
+footer h4{
+    text-transform: uppercase;
+    color: #555555;
+    margin: 0;
+    font-size:18px;
+}
+footer ul{
+    float: left;
+    width: 25%;
+    list-style-type: none;
+}
+footer::after{
+    content : "";
+    display: block;
+    clear: both;
+}
+footer li{
+    color: #aaaaaa;
+    width: 80%;
+    margin: 20px 0 ;
+    font-size: 14px;
+    line-height: 1.6em;
+}
+footer li.tw{
+    padding-left: 20px;
+    background: url(img/tweet.png) no-repeat left 6px;
+}
+#copyright{
+    clear: both;
+    padding-top: 30px;
+    margin-top: 30px;
+    border-top: 1px solid #b8b8b8;
+    width: 100%;
+    float: left;
+    color:  #999999;
+    font-size: 14px;
+}
+/*Responsive*/
+@media screen and (max-width: 960px){
+
+    #selling-points li{
+        width: 40%;
+        padding: 0 5%;
+        margin: 20px 0;
+    }
+    
+    #selling-points li:nth-child(odd){
+        clear: both;
+    }
+    
+    footer ul{
+        width: 50%;
+    }
+    
+    footer ul:nth-child(odd){
+        clear: both;
+    }
+    
+    #quote{
+        width: 90%;
+        padding: 40px 5%;
+    }
+    
+    }
+/*Tablet*/
+@media screen and (max-width:768px){
+    header nav{
+        float:none;
+    }
+    header nav li{
+        margin:0;
+        width:14.66%;
+        text-align:center;
+        font-size:14px;
+    }
+    header h1.logo{
+        float:none;
+        margin:0 auto 15px;
+
+    }
+    #latest-works li{
+        width:60%;
+        margin:30px 20% !important;
+        float:none;
+    }
+    #latest-works h2{
+        text-align:center;
+    }
+}
+/*Phone*/
+@media screen and (max-width:480px){
+    #selling-points li{
+        width:80%;
+        padding:0 10%;
+        margin:20px 0;
+    }
+    #latest-works li{
+        width: 80%;
+        margin: 30px 10% !important;
+    }
+    #quote{
+        font-size:16px;
+        font-weight:600;
+    }
+    footer ul{
+        width:100%;
+        float:none;
+        border-top:2px solid #333;
+    }
+    header nav li{
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+    
+    header nav{
+        background: #555;
+    }
+    
+    header .wrapper{
+        padding: 0;
+        width: 100%;
+    
+    }
+    
+    header{
+        padding-bottom: 0;
+    }
+    
+    header nav li a{
+        display: block;
+        text-align: center;
+        padding: 10px;
+        color: #999;
+        border-top: 1px solid #4f4f4f
+    }
+    
+    #burger-nav{
+        width: 100%;
+        height: 40px;
+        background: url(img/burger.png) no-repeat 98% center;
+        cursor: pointer;
+    }
+    header nav ul{
+        height:0;
+        overflow:hidden;
+        
+    }
+    header nav ul.open{
+        height: auto;
+        
+    }
+}
